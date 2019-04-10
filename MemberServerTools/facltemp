@@ -1,0 +1,30 @@
+# file: bruenig.V2/
+# owner: someusername
+# group: domain\040users
+user::rwx
+group::---
+group:1000005:rwx
+group:domain\040users:---
+group:someusername:rwx
+mask::rwx
+other::---
+default:user::rwx
+default:user:someusername:rwx
+default:group::---
+default:group:1000005:rwx
+default:group:domain\040users:---
+default:group:someusername:rwx
+default:mask::rwx
+default:other::---
+
+# file: someusername.V2/NTUSER.DAT
+# owner: someusername
+# group: domain\040users
+user::rwx
+user:someusername:rwx
+group::r--
+group:1000005:rwx
+group:domain\040users:---
+group:someusername:rwx
+mask::rwx
+other::r--
